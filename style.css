@@ -1,0 +1,482 @@
+:root {
+  --primary-color: #fff;
+  /* --primary-color: #15181f; */
+  --secondary-color: #fff;
+  /* --secondary-color: #222d32; */
+  --text-color : #e0d0e4; 
+  --font-size: 14px;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Noto Sans", sans-serif;
+
+}
+
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.font-class1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  margin-top: 10px;
+}
+
+#main-container {
+  background-color: var(--primary-color);
+  /* background-color: red; */
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+#panel-show{
+  width: 50px;
+  height: 50px;
+
+  /* background-color: #411f1f; */
+
+  position: absolute;
+
+  top: 1%;
+  left: 1%;
+
+  cursor: pointer;
+
+  display: none;
+
+}
+
+#left-panel {
+  background-color: var(--secondary-color);
+
+  height: 100%;
+  width: 15%;
+
+  border-right: 20px solid rgb(203, 203, 203);
+
+  /* display: none; */
+}
+
+#hide-panel{
+  width: 50px;
+  height: 50px;
+
+  cursor: pointer;
+
+
+  /* background-color: #722a2a; */
+}
+.panel-p {
+  margin-top: 20px;
+  padding: 10px 0px 10px 0px;
+}
+
+.panel-p:hover{
+  background-color: #605d5d;
+}
+
+#right-container {
+  /* background-color:  blue; */
+
+  width: 85vw;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  /* column-gap: 50px; */
+
+  /* padding: 10px; */
+
+}
+
+.box-class {
+
+  height: 55%;
+  width: 48%;
+
+  border: 2px solid rgb(183, 183, 183);
+
+  border-radius: 10px;
+
+}
+
+.flex-wrap {
+  display: flex;
+  justify-content: center;
+  
+  flex-wrap: wrap;
+  align-items:center;
+
+  /* align-items: center; */
+
+}
+
+.flex-nowrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap:; */
+}
+
+#selected-config-container {
+  width: 70%; 
+
+}
+
+#avatar-show-container {
+  width: 25%;
+  border: none;
+
+  background-color: rebeccapurple;
+}
+
+#selected-config-container, #avatar-show-container {
+  height: 40%;
+}
+
+
+.accent-border {
+  border: 2px solid rgb(183, 183, 183);
+  border-radius: 10px;
+}
+
+
+p {
+  text-align: center;
+  color: white;
+}
+
+.config-list {
+
+  /* background-color: blueviolet; */
+  width: 90%;
+  height: 100px;
+
+  margin-top: 10px;
+  margin: 10px 4% 0px 5%;
+
+}
+
+.config-info {
+  width: 90%;
+  justify-content: left;
+}
+
+.img-div {
+  height: 100px;
+  min-width: 100px;
+
+  border-radius: 10px;
+
+  background-color: brown;
+}
+
+.info-p{
+  width: 100%;
+  height: 30px;
+  margin-left: 20px;
+  text-align: left;
+
+  font-size: 2vmin;
+
+  /* background-color: darkcyan; */
+}
+
+.voice-name{
+
+  font-size: 1.4rem;
+  
+}
+
+/* .accent-name{
+
+} */
+
+.struc-p {
+  /* background-color: green; */
+  width: 90%;
+  max-height: 30px;
+  height: auto;
+  margin-bottom: 10px;
+
+  text-align: left;
+
+}
+
+#config-list-container {
+  /* background-color: yellow; */
+  width: 95%;
+  
+  height: 85%;
+
+  overflow-x: auto;
+}
+
+#inner-avatar {
+  height: 100%;
+  width: 100%;
+
+  background-size: cover;
+
+  background-color: royalblue;
+
+
+  align-items: last baseline;
+
+
+}
+
+#inner-avatar p{
+  font-size: 1.9rem;
+  /* background-color: red; */
+  /* width: 90%; */
+
+}
+
+#start-conv {
+  background-color: rgb(56, 56, 56);
+  width: 90%;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  bottom: 25%;
+
+  cursor: pointer;
+
+
+  color: #fff;
+}
+
+#voice-lib-container {
+  align-items: baseline;
+}
+
+#selections {
+  /* background-color: rebeccapurple; */
+
+  width: 50%;
+  height: 10%;
+  min-height: 60px;
+
+  justify-content: space-around;
+}
+
+#voice-lib-inner{
+  /* background-color: red; */
+
+  height: 85%;
+  width: 90%;
+}
+
+#select-voice-lib-container{
+  /* background-color: brown; */
+  width: 100%;
+  height: 85%;
+
+  overflow-x: auto;
+
+}
+
+.custom-select {
+  /* background-color: #f0f0f0; */
+  color: #ffffff;
+  padding: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  font-size: 1.2rem;
+
+  outline: none;
+
+  background: transparent;
+
+  /* appearance: none; */
+
+  /* box-sizing: border-box; */
+}
+
+.radio1 {
+  display: none;
+}
+
+.voice-list {
+  margin-top: 15px;
+  justify-content: space-evenly;
+
+  cursor: pointer;
+}
+
+.radio1:checked + .voice-list {
+  background-color: #a4a4a4;
+  color: white;
+}
+
+.voice-lib-name {
+  width: 70%;
+  font-size: 1.5rem;
+
+}
+
+.accent-lib-name {
+  width: 70%;
+
+  font-size: 1.1rem;
+}
+
+
+.config-info {
+  width: 90%;
+  justify-content: left;
+}
+
+.play-icon-div{
+  width: 50px;
+  height: 50px;
+
+  /* background-color: blue; */
+
+  margin-right: 20px;
+}
+
+#avatar-select-container {
+  align-items: baseline;
+}
+
+#avatar-select-div{
+  /* background-color: red; */
+
+  height: 90%;
+  width: 90%;
+}
+
+#avatar-select-panel {
+  /* background-color: yellow; */
+
+  height: 10%;
+  width: 90%;
+  /* min-width: 650px; */
+  /* max-width: 680px; */
+  min-height: 50px;
+
+  justify-content: space-around;
+
+  /* overflow: auto; */
+
+}
+
+#avatar-list-div {
+  /* background-color: tomato; */
+
+  height: 85%;
+  width: 100%;
+}
+
+.radio2{
+  display: none;
+}
+
+.radio2:checked ~ .avatar-under-line {
+  background-color: #605d5d;
+}
+
+.avatar-under-line{
+  /* background-color: #1b2527; */
+
+  height: 5px;
+  width: 100%;
+  /* min-width: 150px; */
+
+  position: absolute;
+  bottom: 1%;
+}
+
+.avatar {
+  height: 100%;
+  width: auto;
+  /* min-width: 150px; */
+
+  /* background-color: #0dc128; */
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.select-avatar{
+  height: 100%;
+
+  /* background-color: #1b0d0d; */
+}
+
+.avatar-p{
+  display: inline-block;
+  width: auto;
+  /* padding: 0xp 30px 0px 30px; */
+
+  font-size: 1.8rem;
+
+
+  /* background-color: #5a4545; */
+}
+
+#avatar-img-div{
+
+  background-color: yellow;
+
+  width: 200px;
+  height: 200px;
+
+  margin: 10px;
+
+  cursor: pointer;
+
+}
+
+#avatar-img-container-div{
+  /* background-color: rgb(76, 27, 76); */
+  /* background-color: var(--primary-color); */
+
+  border-top: 2px solid grey;
+
+  width: 95%;
+  height: 95%;
+
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+p {
+  color: #000;
+}
+
+.font-white{
+  color: #fff;
+}

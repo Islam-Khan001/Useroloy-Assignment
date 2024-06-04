@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="main-container">
+      <div id="panel-show"><img src="menu.png" alt=""></div>
+      <div id="left-panel">
+        <div id="hide-panel" class="flex-nowrap"><img src="cross.png" alt=""></div>
+        <p class="font-class1 panel-p">Study setup</p>
+        <p class="font-class1 panel-p">Ai Configuration</p>
+        <p class="font-class1 panel-p">Review Results</p>
+      </div>
+
+      <div id="right-container">
+
+
+        <div id="selected-config-container" class="box-class accent flex-wrap">
+          <p class="struc-p font-class1">Selected Configuration</p>
+          <div id="config-list-container" class="">
+            <div class="config-list accent-border flex-nowrap">
+              <div class="img-div"><img src="robo.jpg" alt=""></div>
+              <div class="config-info flex-wrap">
+                <p class="voice-name info-p">Katherine</p>
+                <p class="accent-name info-p">American Accent</p>
+              </div>
+            </div>
+
+            <div class="config-list accent-border flex-nowrap">
+              <div class="img-div"><img src="human.jpg" alt=""></div>
+              <div class="config-info flex-wrap">
+                <p class="voice-name info-p">Scarlett</p>
+                <p class="accent-name info-p">American Accent</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="avatar-show-container" class="box-class flex-wrap">
+          <img src="robo.jpg" alt="" id="inner-avatar" class="flex-nowrap accent-border">
+          <div id="start-conv" class="accent-border"><p class="font-white">Start Conversation</p></div>
+        </div>
+        <div id="voice-lib-container" class="box-class accent flex-wrap">
+          <p class="struc-p font-class1">Voice Library</p>
+          <div id="voice-lib-inner">
+
+            <div id="selections" class="flex-wrap">
+              <div id="age-select-div" class="custom-select">
+                <select title="age-select" name="age-select", id="age-select">
+                  <option value="0">Age</option>
+                  <option value="1">Teen</option>
+                  <option value="2">Adult</option>              
+                </select>
+              </div>
+              
+              <div id="gender-select-div" class="custom-select">
+                <select title="gender-select" name="gender-select", id="gender-select">
+                  <option value="0">Gender</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>              
+                </select>
+              </div>
+            </div>
+
+            <div id="select-voice-lib-container">
+              <label class="toggle-div">
+                <input type="radio" name="toggle" class="radio1">
+                <div class="voice-list config-list accent-border flex-nowrap">
+                  <div class="config-info flex-wrap">
+                    <p class="voice-lib-name info-p">Katherine</p>
+                    <p class="accent-lib-name info-p">American Accent</p>                    
+                  </div>
+
+                  <div class="play-icon-div"><img id="play-icon" src="play.png" alt=""></div>
+  
+                </div>
+            </label>
+
+            <label class="toggle-div">
+              <input type="radio" name="toggle" class="radio1">
+              <div class="voice-list config-list accent-border flex-nowrap">
+                <div class="config-info flex-wrap">
+                  <p class="voice-lib-name info-p">Scarlett</p>
+                  <p class="accent-lib-name info-p">American Accent</p>                    
+                </div>
+
+                <div class="play-icon-div"><img id="play-icon" src="play.png" alt=""></div>
+
+              </div>
+            </label>
+
+            <label class="toggle-div">
+              <input type="radio" name="toggle" class="radio1">
+              <div class="voice-list config-list accent-border flex-nowrap">
+                <div class="config-info flex-wrap">
+                  <p class="voice-lib-name info-p">John</p>
+                  <p class="accent-lib-name info-p">American Accent</p>                    
+                </div>
+
+                <div class="play-icon-div"><img id="play-icon" src="play.png" alt=""></div>
+
+              </div>
+            </label>
+
+           
+
+          </div>
+
+        </div>
+      </div>
+      <div id="avatar-select-container" class="box-class accent flex-wrap">
+        <p class="struc-p font-class1">Avatar Library</p>
+        <div id="avatar-select-div" class="flex-wrap">
+          <div id="avatar-select-panel" class="flex-nowrap">
+            <label class="select-avatar">
+              <div class="flex-wrap avatar">
+                <input type="radio" name="toggle1" class="radio2" value="1">
+                <p class="struc-p font-class1 avatar-p">Human</p>
+                <div class="avatar-under-line"></div>
+              </div>
+          </label>
+
+          <label class="select-avatar">
+            <div class="flex-wrap avatar">
+              <input type="radio" name="toggle1" class="radio2" value="2">
+              <p class="struc-p font-class1 avatar-p">AI Robot</p>
+              <div class="avatar-under-line"></div>
+            </div>
+        </label>
+
+        <label class="select-avatar">
+          <div class="flex-wrap avatar">
+            <input type="radio" name="toggle1" class="radio2" value="3">
+            <p class="struc-p font-class1 avatar-p">Wave</p>
+            <div class="avatar-under-line"></div>
+          </div>
+      </label>
+
+      <label class="select-avatar">
+        <div class="flex-wrap avatar">
+          <input type="radio" name="toggle1" class="radio2" value="4">
+          <p class="struc-p font-class1 avatar-p">Sphere</p>
+          <div class="avatar-under-line"></div>
+        </div>
+    </label>           
+
+
+          </div>
+          <div id="avatar-list-div" class="flex-wrap">
+            <div id="avatar-img-container-div">
+              <div id="avatar-img-div" class="accent-border">
+                <img src="robo.jpg" alt="">
+
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
